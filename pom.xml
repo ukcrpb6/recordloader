@@ -25,6 +25,14 @@
     </repository>
   </distributionManagement>
   
+  <repositories>
+    <repository>
+  	  <id>marklogic-maven</id>
+  	  <name>developer.marklogic.com maven repository</name>
+  	  <url>http://developer.marklogic.com/maven2/</url>
+	  </repository>
+  </repositories>
+  
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
@@ -34,8 +42,8 @@
     </dependency>
     <dependency>
       <groupId>com.marklogic</groupId>
-      <artifactId>xcc</artifactId>
-      <version>4.1-4</version>
+      <artifactId>marklogic-xcc</artifactId>
+      <version>4.1.4</version>
     </dependency>
     <dependency>
       <groupId>xpp3</groupId>
@@ -50,7 +58,6 @@
         
   </dependencies>
   <build>
-    <sourceDirectory>${basedir}/src/java</sourceDirectory>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>

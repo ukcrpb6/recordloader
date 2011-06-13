@@ -24,15 +24,22 @@ import junit.framework.TestCase;
  * @author Michael Blakeley, michael.blakeley@marklogic.com
  *
  */
-public class TimedEventTests extends TestCase {
+public class TimedEventTest extends TestCase {
 
     public void testMonotonicDuration() {
         // runs for about 1 second
         for (int i=0; i<123456; i++) {
             TimedEvent e = new TimedEvent();
+            // Required otherwise time duration between start and stop can be 0
+            System.err.print(i);
             e.stop();
-            //System.err.println("" + i + ": " + e.getDuration());
-            assertFalse(e.getDuration() < 1);
+            System.err.println(": " + e.getDuration());
+
+            assertFalse( 
+              String.format(
+                "Expected duration %d of iteration %d to be greater than one."
+                , e.getDuration(), i)
+              , e.getDuration() < 1);
         }
     }
 }
