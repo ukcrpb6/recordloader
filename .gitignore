@@ -6,5 +6,4 @@ lib/
 publish.sh
 src/*.sh
 src/simplelogger*
-src/test*
 target
