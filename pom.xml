@@ -8,7 +8,7 @@
 	<groupId>com.marklogic.ps</groupId>
 	<artifactId>recordloader</artifactId>
 	<packaging>jar</packaging>
-	<version>2010-03-01.1</version>
+	<version>1.1-SNAPSHOT</version>
 	<name>RecordLoader</name>
 	<url>http://developer.marklogic.com</url>
 	<description>RecordLoader</description>
