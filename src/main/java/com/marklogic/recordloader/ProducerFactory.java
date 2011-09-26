@@ -18,13 +18,12 @@
  */
 package com.marklogic.recordloader;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.InvocationTargetException;
-
-import org.xmlpull.v1.XmlPullParser;
-
 import com.marklogic.ps.RecordLoader;
 import com.marklogic.ps.SimpleLogger;
+import org.xmlpull.v1.XmlPullParser;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
 
 /**
  * @author Michael Blakeley, michael.blakeley@marklogic.com

@@ -18,12 +18,12 @@
  */
 package com.marklogic.recordloader;
 
+import com.marklogic.ps.SimpleLogger;
+
 import java.io.File;
 import java.io.IOException;
 import java.util.zip.ZipException;
 import java.util.zip.ZipFile;
-
-import com.marklogic.ps.SimpleLogger;
 
 /**
  * @author Michael Blakeley, michael.blakeley@marklogic.com

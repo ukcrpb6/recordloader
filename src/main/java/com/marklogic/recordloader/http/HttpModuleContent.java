@@ -18,15 +18,11 @@
  */
 package com.marklogic.recordloader.http;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
-import java.io.Reader;
-import java.io.StringWriter;
-import java.io.UnsupportedEncodingException;
-import java.io.Writer;
+import com.marklogic.recordloader.AbstractContent;
+import com.marklogic.recordloader.ContentInterface;
+import com.marklogic.recordloader.LoaderException;
+
+import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.URLEncoder;
@@ -34,10 +30,6 @@ import java.nio.ByteBuffer;
 import java.nio.charset.CharacterCodingException;
 import java.nio.charset.CharsetDecoder;
 import java.util.Arrays;
-
-import com.marklogic.recordloader.AbstractContent;
-import com.marklogic.recordloader.ContentInterface;
-import com.marklogic.recordloader.LoaderException;
 
 /**
  * @author Michael Blakeley, michael.blakeley@marklogic.com

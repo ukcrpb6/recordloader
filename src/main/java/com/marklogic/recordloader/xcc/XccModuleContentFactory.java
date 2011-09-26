@@ -18,11 +18,11 @@
  */
 package com.marklogic.recordloader.xcc;
 
-import java.math.BigInteger;
-
 import com.marklogic.recordloader.ContentFactory;
 import com.marklogic.recordloader.ContentInterface;
 import com.marklogic.recordloader.LoaderException;
+
+import java.math.BigInteger;
 
 /**
  * @author Michael Blakeley, michael.blakeley@marklogic.com

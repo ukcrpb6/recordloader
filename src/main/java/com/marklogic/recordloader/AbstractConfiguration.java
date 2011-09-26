@@ -18,16 +18,12 @@
  */
 package com.marklogic.recordloader;
 
+import com.marklogic.ps.SimpleLogger;
+
 import java.io.IOException;
 import java.io.InputStream;
 import java.lang.reflect.Field;
-import java.util.Enumeration;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.Properties;
-
-import com.marklogic.ps.SimpleLogger;
+import java.util.*;
 
 /**
  * @author Michael Blakeley, michael.blakeley@marklogic.com

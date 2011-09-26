@@ -18,20 +18,14 @@
  */
 package com.marklogic.recordloader.xcc;
 
-import java.io.InputStream;
-
 import com.marklogic.recordloader.ContentInterface;
 import com.marklogic.recordloader.LoaderException;
-import com.marklogic.xcc.Content;
-import com.marklogic.xcc.ContentCreateOptions;
-import com.marklogic.xcc.ContentFactory;
-import com.marklogic.xcc.Request;
-import com.marklogic.xcc.ResultItem;
-import com.marklogic.xcc.ResultSequence;
-import com.marklogic.xcc.Session;
+import com.marklogic.xcc.*;
 import com.marklogic.xcc.exceptions.RequestException;
 import com.marklogic.xcc.exceptions.XccException;
 import com.marklogic.xcc.types.XSBoolean;
+
+import java.io.InputStream;
 
 /**
  * @author Michael Blakeley, michael.blakeley@marklogic.com

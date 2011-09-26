@@ -18,16 +18,16 @@
  */
 package com.marklogic.recordloader.xcc;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
 import com.marklogic.ps.Utilities;
 import com.marklogic.ps.timing.TimedEvent;
 import com.marklogic.recordloader.Configuration;
 import com.marklogic.recordloader.FatalException;
 import com.marklogic.recordloader.LoaderException;
 import com.marklogic.recordloader.TranscodingLoader;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 /**
  * @author Michael Blakeley, michael.blakeley@marklogic.com

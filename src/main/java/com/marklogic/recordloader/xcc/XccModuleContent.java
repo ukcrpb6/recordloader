@@ -18,17 +18,6 @@
  */
 package com.marklogic.recordloader.xcc;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.io.StringWriter;
-import java.io.Writer;
-import java.math.BigInteger;
-import java.nio.ByteBuffer;
-import java.nio.charset.CharacterCodingException;
-import java.nio.charset.CharsetDecoder;
-
 import com.marklogic.ps.Utilities;
 import com.marklogic.recordloader.ContentInterface;
 import com.marklogic.recordloader.FatalException;
@@ -37,6 +26,12 @@ import com.marklogic.xcc.Request;
 import com.marklogic.xcc.Session;
 import com.marklogic.xcc.exceptions.RequestException;
 import com.marklogic.xcc.types.ValueType;
+
+import java.io.*;
+import java.math.BigInteger;
+import java.nio.ByteBuffer;
+import java.nio.charset.CharacterCodingException;
+import java.nio.charset.CharsetDecoder;
 
 /**
  * @author Michael Blakeley, michael.blakeley@marklogic.com

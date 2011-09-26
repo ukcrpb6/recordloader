@@ -18,20 +18,16 @@
  */
 package com.marklogic.recordloader.http;
 
-import java.net.Authenticator;
-import java.net.MalformedURLException;
-import java.net.PasswordAuthentication;
-import java.net.URI;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 import com.marklogic.ps.SimpleLogger;
 import com.marklogic.recordloader.Configuration;
 import com.marklogic.recordloader.ContentFactory;
 import com.marklogic.recordloader.ContentInterface;
 import com.marklogic.recordloader.LoaderException;
+
+import java.net.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author Michael Blakeley, Mark Logic Corporation

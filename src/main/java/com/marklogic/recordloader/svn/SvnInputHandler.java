@@ -18,11 +18,7 @@
  */
 package com.marklogic.recordloader.svn;
 
-import java.io.ByteArrayOutputStream;
-import java.util.Arrays;
-import java.util.Collection;
-import java.util.Iterator;
-
+import com.marklogic.recordloader.*;
 import org.tmatesoft.svn.core.SVNDirEntry;
 import org.tmatesoft.svn.core.SVNException;
 import org.tmatesoft.svn.core.SVNNodeKind;
@@ -33,11 +29,10 @@ import org.tmatesoft.svn.core.io.SVNRepository;
 import org.tmatesoft.svn.core.io.SVNRepositoryFactory;
 import org.tmatesoft.svn.core.wc.SVNWCUtil;
 
-import com.marklogic.recordloader.AbstractInputHandler;
-import com.marklogic.recordloader.Configuration;
-import com.marklogic.recordloader.FatalException;
-import com.marklogic.recordloader.LoaderException;
-import com.marklogic.recordloader.LoaderInterface;
+import java.io.ByteArrayOutputStream;
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Iterator;
 
 /**
  * @author Michael Blakeley, michael.blakeley@marklogic.com

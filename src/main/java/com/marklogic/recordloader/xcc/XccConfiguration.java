@@ -18,6 +18,15 @@
  */
 package com.marklogic.recordloader.xcc;
 
+import com.marklogic.recordloader.Configuration;
+import com.marklogic.recordloader.FatalException;
+import com.marklogic.xcc.*;
+import com.marklogic.xcc.exceptions.XccConfigException;
+import com.marklogic.xcc.exceptions.XccException;
+
+import javax.net.ssl.SSLContext;
+import javax.net.ssl.TrustManager;
+import javax.net.ssl.X509TrustManager;
 import java.math.BigInteger;
 import java.net.URI;
 import java.security.KeyManagementException;
@@ -27,25 +36,6 @@ import java.security.cert.X509Certificate;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-
-import javax.net.ssl.SSLContext;
-import javax.net.ssl.TrustManager;
-import javax.net.ssl.X509TrustManager;
-
-import com.marklogic.recordloader.Configuration;
-import com.marklogic.recordloader.FatalException;
-import com.marklogic.recordloader.FileLoader;
-import com.marklogic.xcc.ContentCapability;
-import com.marklogic.xcc.ContentPermission;
-import com.marklogic.xcc.ContentSource;
-import com.marklogic.xcc.ContentSourceFactory;
-import com.marklogic.xcc.ContentbaseMetaData;
-import com.marklogic.xcc.DocumentFormat;
-import com.marklogic.xcc.DocumentRepairLevel;
-import com.marklogic.xcc.SecurityOptions;
-import com.marklogic.xcc.Session;
-import com.marklogic.xcc.exceptions.XccConfigException;
-import com.marklogic.xcc.exceptions.XccException;
 
 /**
  * @author Michael Blakeley, michael.blakeley@marklogic.com

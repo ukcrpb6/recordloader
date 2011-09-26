@@ -18,14 +18,13 @@
  */
 package com.marklogic.recordloader;
 
-import java.io.IOException;
-import java.io.InputStream;
-
+import com.marklogic.ps.SimpleLogger;
+import com.marklogic.ps.Utilities;
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
 
-import com.marklogic.ps.SimpleLogger;
-import com.marklogic.ps.Utilities;
+import java.io.IOException;
+import java.io.InputStream;
 
 /**
  * @author Michael Blakeley, michael.blakeley@marklogic.com

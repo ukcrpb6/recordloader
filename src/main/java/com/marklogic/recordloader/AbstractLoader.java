@@ -18,6 +18,10 @@
  */
 package com.marklogic.recordloader;
 
+import com.marklogic.ps.SimpleLogger;
+import com.marklogic.ps.Utilities;
+import com.marklogic.ps.timing.TimedEvent;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -26,10 +30,6 @@ import java.net.URI;
 import java.net.URISyntaxException;
 import java.nio.charset.CharsetDecoder;
 import java.util.logging.Logger;
-
-import com.marklogic.ps.SimpleLogger;
-import com.marklogic.ps.Utilities;
-import com.marklogic.ps.timing.TimedEvent;
 
 /**
  * @author Michael Blakeley, michael.blakeley@marklogic.com

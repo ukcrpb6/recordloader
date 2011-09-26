@@ -19,6 +19,8 @@
 
 package com.marklogic.ps;
 
+import com.marklogic.recordloader.*;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -31,19 +33,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.Properties;
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.RejectedExecutionException;
-import java.util.concurrent.RejectedExecutionHandler;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 import java.util.logging.Level;
-
-import com.marklogic.recordloader.Configuration;
-import com.marklogic.recordloader.FatalException;
-import com.marklogic.recordloader.InputHandlerInterface;
-import com.marklogic.recordloader.LoaderException;
-import com.marklogic.recordloader.Monitor;
 
 /**
  * @author Michael Blakeley, michael.blakeley@marklogic.com
@@ -179,7 +170,9 @@ public class RecordLoader {
             rl = new RecordLoader(args);
             rl.run();
         } finally {
-            rl.close();
+            if(rl != null) {
+                rl.close();
+            }
         }
     }
 

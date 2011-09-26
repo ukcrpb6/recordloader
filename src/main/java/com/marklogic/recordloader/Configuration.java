@@ -18,6 +18,13 @@
  */
 package com.marklogic.recordloader;
 
+import com.marklogic.ps.RecordLoader;
+import com.marklogic.ps.Utilities;
+import com.marklogic.recordloader.xcc.XccConfiguration;
+import com.marklogic.recordloader.xcc.XccContentFactory;
+import org.xmlpull.v1.XmlPullParserException;
+import org.xmlpull.v1.XmlPullParserFactory;
+
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.net.URI;
@@ -29,14 +36,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
-
-import org.xmlpull.v1.XmlPullParserException;
-import org.xmlpull.v1.XmlPullParserFactory;
-
-import com.marklogic.ps.RecordLoader;
-import com.marklogic.ps.Utilities;
-import com.marklogic.recordloader.xcc.XccConfiguration;
-import com.marklogic.recordloader.xcc.XccContentFactory;
 
 /**
  * @author Michael Blakeley, Mark Logic

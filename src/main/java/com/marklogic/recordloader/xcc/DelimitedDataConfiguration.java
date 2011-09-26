@@ -19,7 +19,6 @@
 package com.marklogic.recordloader.xcc;
 
 import com.marklogic.ps.Utilities;
-import com.marklogic.recordloader.xcc.XccConfiguration;
 
 /**
  * @author Michael Blakeley, michael.blakeley@marklogic.com

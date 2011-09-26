@@ -18,13 +18,6 @@
  */
 package com.marklogic.recordloader.xcc;
 
-import java.net.URI;
-import java.security.KeyManagementException;
-import java.security.NoSuchAlgorithmException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 import com.marklogic.ps.SimpleLogger;
 import com.marklogic.recordloader.Configuration;
 import com.marklogic.recordloader.ContentFactory;
@@ -34,6 +27,13 @@ import com.marklogic.xcc.ContentSource;
 import com.marklogic.xcc.ContentSourceFactory;
 import com.marklogic.xcc.exceptions.XccConfigException;
 import com.marklogic.xcc.exceptions.XccException;
+
+import java.net.URI;
+import java.security.KeyManagementException;
+import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * @author Michael Blakeley, michael.blakeley@marklogic.com

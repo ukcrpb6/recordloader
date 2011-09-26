@@ -18,20 +18,15 @@
  */
 package com.marklogic.recordloader;
 
-import java.io.BufferedInputStream;
-import java.io.ByteArrayInputStream;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.InputStream;
+import com.marklogic.ps.RecordLoader;
+import com.marklogic.ps.SimpleLogger;
+import org.xmlpull.v1.XmlPullParserException;
+
+import java.io.*;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.logging.Logger;
-
-import org.xmlpull.v1.XmlPullParserException;
-
-import com.marklogic.ps.RecordLoader;
-import com.marklogic.ps.SimpleLogger;
 
 /**
  * @author Michael Blakeley, michael.blakeley@marklogic.com

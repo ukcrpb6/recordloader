@@ -18,9 +18,9 @@
  */
 package com.marklogic.recordloader;
 
-import java.util.concurrent.ThreadPoolExecutor;
-
 import com.marklogic.ps.SimpleLogger;
+
+import java.util.concurrent.ThreadPoolExecutor;
 
 /**
  * @author Michael Blakeley, michael.blakeley@marklogic.com

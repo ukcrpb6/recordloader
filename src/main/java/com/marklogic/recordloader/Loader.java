@@ -18,6 +18,12 @@
  */
 package com.marklogic.recordloader;
 
+import com.marklogic.ps.RecordLoader;
+import com.marklogic.ps.Utilities;
+import com.marklogic.ps.timing.TimedEvent;
+import org.xmlpull.v1.XmlPullParser;
+import org.xmlpull.v1.XmlPullParserException;
+
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -29,13 +35,6 @@ import java.util.jar.JarEntry;
 import java.util.jar.JarFile;
 import java.util.logging.Logger;
 import java.util.zip.ZipException;
-
-import org.xmlpull.v1.XmlPullParser;
-import org.xmlpull.v1.XmlPullParserException;
-
-import com.marklogic.ps.RecordLoader;
-import com.marklogic.ps.Utilities;
-import com.marklogic.ps.timing.TimedEvent;
 
 /**
  * @author Michael Blakeley, michael.blakeley@marklogic.com

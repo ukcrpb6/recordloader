@@ -18,17 +18,17 @@
  */
 package com.marklogic.recordloader;
 
+import com.marklogic.ps.SimpleLogger;
+import com.marklogic.ps.Utilities;
+import com.marklogic.ps.timing.TimedEvent;
+import com.marklogic.ps.timing.Timer;
+
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
-
-import com.marklogic.ps.SimpleLogger;
-import com.marklogic.ps.Utilities;
-import com.marklogic.ps.timing.TimedEvent;
-import com.marklogic.ps.timing.Timer;
 
 /**
  * @author Michael Blakeley, michael.blakeley@marklogic.com

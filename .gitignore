@@ -7,3 +7,6 @@ publish.sh
 src/*.sh
 src/simplelogger*
 target
+recordloader.iml
+recordloader.ipr
+recordloader.iws
