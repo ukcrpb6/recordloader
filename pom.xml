@@ -1,71 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
          xsi:schemaLocation='http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd'>
+    <modelVersion>4.0.0</modelVersion>
 
-  <modelVersion>4.0.0</modelVersion>
-	<groupId>com.marklogic.ps</groupId>
-	<artifactId>recordloader</artifactId>
-	<packaging>jar</packaging>
-	<version>1.1-SNAPSHOT</version>
-	<name>RecordLoader</name>
-	<url>http://developer.marklogic.com</url>
-	<description>RecordLoader</description>
-  <organization>
-    <name>Mark Logic</name>
-    <url>http://www.marklogic.com/</url>
-  </organization>
+    <groupId>com.marklogic.ps</groupId>
+    <artifactId>recordloader</artifactId>
+    <version>1.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
 
-  <distributionManagement>
-    <repository>
-      <id>helmstetter-maven</id>
-      <name>helmstetter-maven</name>
-      <url>scp://helmstetter.com/var/www/helmstetter.com/maven</url>
-    </repository>
-  </distributionManagement>
-  
-  <repositories>
-    <repository>
-  	  <id>marklogic-maven</id>
-  	  <name>developer.marklogic.com maven repository</name>
-  	  <url>http://developer.marklogic.com/maven2/</url>
-	  </repository>
-  </repositories>
-  
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>com.marklogic</groupId>
-      <artifactId>marklogic-xcc</artifactId>
-      <version>4.1.4</version>
-    </dependency>
-    <dependency>
-      <groupId>xpp3</groupId>
-      <artifactId>xpp3</artifactId>
-      <version>1.1.4c</version>
-    </dependency>
-    <dependency>
-      <groupId>org.tmatesoft</groupId>
-      <artifactId>svn</artifactId>
-      <version>1.1.0</version>
-    </dependency>    
-        
-  </dependencies>
-  <build>
-    <plugins>
-      <plugin>
-        <artifactId>maven-compiler-plugin</artifactId>
-         <configuration>
-          <source>1.5</source>
-          <target>1.5</target>
-         </configuration>
-      </plugin>
-    </plugins>
-  </build>	
+    <name>RecordLoader</name>
+    <url>http://developer.marklogic.com</url>
+    <description>RecordLoader</description>
+    <organization>
+        <name>Mark Logic</name>
+        <url>http://www.marklogic.com/</url>
+    </organization>
+
+    <developers>
+        <developer>
+            <id>bobb</id>
+            <name>Bob Browning</name>
+            <email>bob.browing@pressassociation.com</email>
+            <roles>
+                <role>Maintainer</role>
+            </roles>
+        </developer>
+    </developers>
+
+    <scm>
+        <connection>scm:git:git@github.com:ukcrpb6/recordloader.git</connection>
+        <developerConnection>scm:git:git@github.com:ukcrpb6/recordloader.git</developerConnection>
+        <url>http://github.com/ukcrpb6/recordloader/</url>
+    </scm>
+
+    <distributionManagement>
+        <repository>
+            <id>pressassociation.releases</id>
+            <url>http://nexus.howden.press.net/nexus/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>pressassociation.snapshots</id>
+            <url>http://nexus.howden.press.net/nexus/content/repositories/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <properties>
+        <maven.source.encoding>UTF-8</maven.source.encoding>
+    </properties>
+
+    <dependencies>
+        <!-- Utilities -->
+        <dependency>
+            <groupId>com.marklogic</groupId>
+            <artifactId>marklogic-xcc</artifactId>
+            <version>4.1.4</version>
+        </dependency>
+        <dependency>
+            <groupId>xpp3</groupId>
+            <artifactId>xpp3</artifactId>
+            <version>1.1.4c</version>
+        </dependency>
+        <dependency>
+            <groupId>org.tmatesoft</groupId>
+            <artifactId>svn</artifactId>
+            <version>1.1.0</version>
+        </dependency>
+
+        <!-- Test -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.1</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+
+    <repositories>
+        <repository>
+            <id>marklogic-maven</id>
+            <name>developer.marklogic.com maven repository</name>
+            <url>http://developer.marklogic.com/maven2/</url>
+        </repository>
+    </repositories>
+
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <encoding>${maven.source.encoding}</encoding>
+                    <source>1.5</source>
+                    <target>1.5</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.2.2</version>
+                <configuration>
+                    <localCheckout>true</localCheckout>
+                    <pushChanges>false</pushChanges>
+                    <tagNameFormat>v@{project.version}</tagNameFormat>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>
